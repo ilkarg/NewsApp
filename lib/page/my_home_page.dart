@@ -28,7 +28,7 @@ class MyHomePage extends StatelessWidget {
         future: fetchData(), 
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return CircularProgressIndicator();
+            return Center(child: CircularProgressIndicator());
           } else if (snapshot.hasError) {
             return Text('Ошибка: ${snapshot.error}');
           } else {

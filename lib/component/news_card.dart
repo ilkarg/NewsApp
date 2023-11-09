@@ -10,7 +10,7 @@ class NewsCard extends StatelessWidget {
     return Card(
       child: ListTile(
         title: Text(data.title),
-        subtitle: Text(data.body),
+        subtitle: Text(data.description),
       ),
     );
   }

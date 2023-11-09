@@ -5,10 +5,7 @@ import 'package:android_example/page/second_screen.dart';
 void main() {
   runApp(MaterialApp(
     initialRoute: '/',
-    routes: {
-      '/':(BuildContext context) => MyHomePage(),
-      //'/second':(BuildContext context) => SecondScreen()
-    }
+    routes: {'/': (BuildContext context) => MyHomePage()}
   ));
 }
 

@@ -10,12 +10,15 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Второе окно')
+        title: Text(data.title)
       ),
-      body: Center(
-        child: TextButton(
-          onPressed: (){ Navigator.pop(context); }, 
-          child: Text('Назад')
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            children: [
+              Text(data.body.replaceAll("/n", "\n"))
+            ]
+          )
         )
       ),
     );
